@@ -1,0 +1,20 @@
+#!/bin/bash
+
+KERNEL=$(uname -r)
+USER_NAME=$(whoami)
+DATE=$(date)
+
+UPTIME=$(uptime)
+
+if [ -f /etc/os-release ]; then
+    DISTRO=$(grep PRETTY_NAME /etc/os-release | cut -d= -f2 | tr -d '"')
+else
+    DISTRO=$(sw_vers -ProductName)
+fi
+
+echo "OS       : $DISTRO"
+echo "Kernel   : $KERNEL"
+echo "User     : $USER_NAME"
+echo "Uptime   : $UPTIME"
+echo "Date     : $DATE"
+echo "License  : GNU General Public License (GPL)"
