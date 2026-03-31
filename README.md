@@ -1,7 +1,7 @@
 # oss-audit-24BCG10083 
 Open Source Software Audit Project based on Git – includes Linux shell scripts and detailed report.
 
-## 👤 Student Details
+## Student Details
 
 Name: Manan Maheshwari
 Registration Number: 24BCG10083
